@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/context 
+           http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+
+	<bean class="com.spring.Student" name="student">
+		<property name="studentId">
+			<!-- value as a tag -->
+			<value>12345</value>
+		</property>
+
+		<property name="studentName">
+			<value>Mohammed Azhar</value>
+		</property>
+
+		<property name="studentCourse">
+			<value>Java Full Stack developer</value>
+		</property>
+	</bean>
+
+	<!-- value as a attribute -->
+	<bean class="com.spring.Student" name="student1">
+		<property name="studentId" value="98754" />
+		<property name="studentName" value="Mohammed junaid" />
+		<property name="studentCourse" value="science" />
+	</bean>
+
+
+	<!-- property as a attribute -->
+	<bean class="com.spring.Student" name="student2"
+		p:studentId="12854" p:studentName="mohammed mujahid"
+		p:studentCourse="physical educaation" />
+
+
+	<bean class="com.spring.Student" name="student3" p:studentId="42"
+		p:studentName="Mohammed anas" p:studentCourse="bca" />
+</beans>

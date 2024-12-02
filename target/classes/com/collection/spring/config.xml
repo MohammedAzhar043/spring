@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<bean class="com.collection.spring.Employee" name="emp1">
+
+		<property name="name" value="Mohammed Azhar" />
+
+		<property name="phoneNumber">
+			<list>
+				<value>9535513058</value>
+				<value>8747876322</value>
+				<value>9008805210</value>
+				<value>9535513058</value>
+				<null />
+			</list>
+		</property>
+
+		<property name="address">
+			<set>
+				<value>kunigal</value>
+				<value>tumkur</value>
+				<value>banglore</value>
+				<value>hasan</value>
+				<null />
+			</set>
+		</property>
+		<property name="courses">
+
+			<map>
+				<entry key="java" value="2 months" />
+				<entry key="jdbc" value="1 months" />
+				<entry key="jsp and servlet" value="1 months" />
+				<entry key="hibernate" value="1 months" />
+			</map>
+		</property>
+		<property name="props">
+
+			<props>
+
+				<prop key="name">Syed Zubair Ahmed</prop>
+				<prop key="industory">IT Expert</prop>
+
+			</props>
+
+
+
+		</property>
+	</bean>
+
+</beans>

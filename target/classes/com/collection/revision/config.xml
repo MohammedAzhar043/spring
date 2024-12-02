@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+
+
+	<bean class="com.collection.revision.Employee" name="employee">
+
+		<property name='empName'>
+			<value>Mohammed Azhar</value>
+		</property>
+
+
+		<property name="empPhone">
+			<list>
+				<value>9008805210</value>
+				<value>8747876933</value>
+				<value>9535513058</value>
+			</list>
+		</property>
+
+		<property name="empAddress">
+
+			<set>
+
+				<value>kunigal</value>
+				<value>mandya</value>
+				<value>mysoore</value>
+				<value>nagamangala</value>
+
+			</set>
+		</property>
+
+		<property name="courses">
+
+			<map>
+				<entry key="java" value="oops based programmig language" />
+				<entry key="c" value="non oops based programmig language" />
+			</map>
+
+		</property>
+
+		<property name="props">
+
+			<props>
+				<prop key="name">xyz</prop>
+				<prop key="age">25</prop>
+
+			</props>
+		</property>
+	</bean>
+
+</beans>
